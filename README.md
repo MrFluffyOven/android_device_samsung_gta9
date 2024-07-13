@@ -1,4 +1,4 @@
-# Android device tree for samsung SM-X210 (gta9pwifi)
+# Android device tree for samsung SM-X115 (gta9)
 
 # How-to compile it:
 
