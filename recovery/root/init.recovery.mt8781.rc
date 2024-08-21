@@ -1,4 +1,5 @@
 import /init.recovery.project.rc
+import /init.recovery.samsung.rc
 
 on init
     setprop sys.usb.configfs 1
