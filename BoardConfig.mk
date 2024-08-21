@@ -50,7 +50,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 # mkbootimg
 BOARD_MKBOOTIMG_ARGS:= \
---board=SRPWD26A002 \
+--board=SRPWD26A003 \
 --dtb_offset=0x07c88000 \
 --kernel_offset=0x00008000 \
 --ramdisk_offset=0x26f08000 \
