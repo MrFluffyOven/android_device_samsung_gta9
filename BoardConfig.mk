@@ -175,6 +175,6 @@ TW_DEVICE_VERSION := TND B002_Staging
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
 
 # Modules
-TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/vendor/lib/modules)\")
+TW_LOAD_VENDOR_MODULES := "chipone.ko hxchipset.ko jdchipset.ko"
 
 
