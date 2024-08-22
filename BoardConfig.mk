@@ -169,12 +169,12 @@ TW_BACKUP_EXCLUSIONS := /data/fonts
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TW_NO_CPU_TEMP := true
-TW_DEVICE_VERSION := TND B002_Staging
+TW_DEVICE_VERSION := TND B002_Staging-2
 
 # Battery correct percentage
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
 
 # Modules
-TW_LOAD_VENDOR_MODULES := "chipone.ko hxchipset.ko jdchipset.ko"
+TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
 
 
