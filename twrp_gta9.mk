@@ -15,6 +15,8 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from gta9 device
 $(call inherit-product, device/samsung/gta9/device.mk)
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/gta9/recovery/root,recovery/root)
+
 PRODUCT_DEVICE := gta9
 PRODUCT_NAME := twrp_gta9
 PRODUCT_BRAND := samsung
