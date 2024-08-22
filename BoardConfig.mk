@@ -176,3 +176,6 @@ TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
 
 # Modules
 TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
+
+# env
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
