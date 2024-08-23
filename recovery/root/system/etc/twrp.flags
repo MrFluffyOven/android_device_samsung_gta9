@@ -1,34 +1,7 @@
-# Logical Partitions
-
-# Physical Partitions
-/boot               emmc      /dev/block/by-name/boot               flags=display=boot;backup=1;flashimg
-/recovery           emmc      /dev/block/by-name/recovery           flags=display=recovery;backup=1;flashimg
-/efs                ext4      /dev/block/by-name/sec_efs            flags=display=efs;backup=1
-/carrier            ext4      /dev/block/by-name/carrier            flags=display=carrier;backup=1
-/preload            ext4      /dev/block/by-name/hidden             flags=display=preload;backup=1
-/misc               emmc      /dev/block/by-name/misc               flags=display=misc;backup=1
-/modem              emmc      /dev/block/by-name/apnhlos            flags=display=modem;backup=1
-/mdm                emmc      /dev/block/by-name/modem              flags=display=mdm;backup=1
-/dsp                emmc      /dev/block/by-name/dsp                flags=display=dsp;backup=1
-/dtbo               emmc      /dev/block/by-name/dtbo               flags=display=dtbo;backup=1;flashimg
-/md1img             emmc      /dev/block/by-name/md1img             flags=display=md1img;backup=1
-/spmfw              emmc      /dev/block/by-name/spmfw              flags=display=spmfw;backup=1
-/scp1               emmc      /dev/block/by-name/scp1               flags=display=scp1;backup=1
-/sspm_1             emmc      /dev/block/by-name/sspm_1             flags=display=sspm_1;backup=1
-/keydata            ext4      /dev/block/by-name/keydata            flags=display=keydata;backup=1
-/keyrefuge          f2fs      /dev/block/by-name/keyrefuge          flags=display=keyrefuge;backup=1
-/gz1                emmc      /dev/block/by-name/gz1                flags=display=gz1;backup=1
-/optics             ext4      /dev/block/by-name/optics             flags=display=optics;backup=1
-/prism              ext4      /dev/block/by-name/prism              flags=display=prism;backup=1
-/cam_vpu1           emmc      /dev/block/by-name/cam_vpu1           flags=display=cam_vpu1;backup=1
-/cam_vpu2           emmc      /dev/block/by-name/cam_vpu2           flags=display=cam_vpu2;backup=1
-/cam_vpu3           emmc      /dev/block/by-name/cam_vpu3           flags=display=cam_vpu3;backup=1
-/pi_img             emmc      /dev/block/by-name/pi_img             flags=display=pi_img;backup=1
-/vbmeta_samsung     emmc      /dev/block/by-name/vbmeta_samsung     flags=display=vbmeta_samsung;backup=1
-/grd_fw             emmc      /dev/block/by-name/grd_fw             flags=display=grd_fw;backup=1
-/vendor_boot        emmc      /dev/block/by-name/vendor_boot        flags=display=vendor_boot;backup=1;flashimg
-
-# Data Partitions
-/data               f2fs      /dev/block/by-name/userdata           flags=display=data;backup=1
-/cache              ext4      /dev/block/by-name/cache              flags=display=cache;backup=1
-/metadata           ext4      /dev/block/by-name/metadata           flags=display=metadata;backup=1
+# mount point	fstype		device			device2			flags
+/system_image		emmc	/dev/block/mapper/system		flags=backup=0;flashimg;display="System Image"
+/vendor_image		emmc	/dev/block/mapper/vendor		flags=backup=0;flashimg;display="Vendor Image"
+/product_image		emmc	/dev/block/mapper/product		flags=backup=0;flashimg;display="Product Image"
+/odm_image		emmc	/dev/block/mapper/odm		flags=backup=0;flashimg;display="Odm Image"
+/system_ext_image	emmc	/dev/block/mapper/system_ext	flags=backup=0;flashimg;display="System_EXT Image"
+/vendor_dlkm_image	emmc	/dev/block/mapper/vendor_dlkm	flags=backup=0;flashimg;display="Vendor_DLKM Image"
