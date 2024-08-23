@@ -45,7 +45,7 @@ vendor_dlkm	/vendor_dlkm	erofs	ro	wait,,avb,logical,first_stage_mount
 
 
 
-#/dev/block/by-name/efs	/mnt/vendor/efs	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check,formattable
+/dev/block/by-name/efs	/mnt/vendor/efs	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check,formattable
 
 
 
