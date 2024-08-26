@@ -176,8 +176,6 @@ TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
 
 # Vendor Modules
 TW_LOAD_VENDOR_MODULES := "adsp.ko chipone.ko hxchipset.ko jdchipset.ko touch_common.ko"
-TW_LOAD_VENDOR_BOOT_MODULES := true
-TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 
 # env
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
