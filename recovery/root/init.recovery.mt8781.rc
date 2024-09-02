@@ -9,7 +9,6 @@ on init
 
     start vendor.keymint-default
     start vendor.gatekeeper-1-0
-    start service hidl_memory
     start sem_daemon
 
 on fs && property:ro.debuggable=0
