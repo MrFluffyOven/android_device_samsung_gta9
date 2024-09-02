@@ -175,7 +175,7 @@ TW_DEVICE_VERSION := TND_3.5_Staging
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
 
 # Vendor Modules
-TW_LOAD_VENDOR_MODULES := true
+TW_LOAD_VENDOR_MODULES := "adsp.ko chipone.ko hxchipset.ko jdchipset.ko touch_common.ko"
 
 # env
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true

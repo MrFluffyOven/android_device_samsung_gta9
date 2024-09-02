@@ -203,8 +203,3 @@
 /lib/modules/cmdq-platform-mt6789.ko: /lib/modules/mtk-cmdq-drv-ext.ko /lib/modules/vcp_status.ko /lib/modules/mmprofile.ko /lib/modules/irq-dbg.ko /lib/modules/mtk-smi-dbg.ko /lib/modules/mtk-smi.ko /lib/modules/emi.ko /lib/modules/emi-mpu.ko /lib/modules/iommu_debug.ko /lib/modules/iommu_secure.ko /lib/modules/device-apc-common.ko /lib/modules/aee_aed.ko /lib/modules/mrdump.ko /lib/modules/sec_extra_info.ko /lib/modules/sec_ext.ko /lib/modules/bootprof.ko /lib/modules/sec_debug.ko
 /lib/modules/mac80211.ko: /lib/modules/cfg80211.ko
 /lib/modules/mtk_mdpm.ko:
-/lib/modules/chipone.ko: /lib/modules/touch_common.ko
-/lib/modules/touch_common.ko:
-/lib/modules/jdchipset.ko: /lib/modules/touch_common.ko
-/lib/modules/novatek.ko: /lib/modules/touch_common.ko
-/lib/modules/hxchipset.ko: /lib/modules/touch_common.ko

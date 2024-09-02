@@ -381,8 +381,3 @@ usb_notify_layer.ko
 usb_f_conn_gadget.ko
 usb_f_dm.ko
 usb_f_ss_mon_gadget.ko
-touch_common.ko
-novatek.ko
-hxchipset.ko
-jdchipset.ko
-chipone.ko
