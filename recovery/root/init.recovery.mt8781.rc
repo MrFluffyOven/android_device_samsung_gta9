@@ -10,6 +10,7 @@ on init
     start vendor.keymint-default
     start vendor.gatekeeper-1-0
     start service hidl_memory
+    start sem_daemon
 
 on fs && property:ro.debuggable=0
     # distinguish USB shoulde connect or not, i.e. CDP vs SDP
@@ -45,5 +46,16 @@ service vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-ser
     group root 5678
     seclabel u:r:recovery:s0
 
-on property:sys.boot_completed=1
-    start sem_daemon
+service hidl_memory /system/bin/hw/android.hidl.allocator@1.0-service
+    class hal
+    user root
+    group root
+    seclabel u:r:recovery:s0
+
+service sem_daemon /system/bin/sem_daemon
+    class core
+    user root
+    group root nfc
+    oneshot
+    disabled
+    seclabel u:r:recovery:s0
