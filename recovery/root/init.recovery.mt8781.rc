@@ -9,6 +9,7 @@ on init
 
     start vendor.keymint-default
     start vendor.gatekeeper-1-0
+    start service hidl_memory
 
 on fs && property:ro.debuggable=0
     # distinguish USB shoulde connect or not, i.e. CDP vs SDP

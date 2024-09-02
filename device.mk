@@ -45,3 +45,7 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier \
+
+# tzdata
+PRODUCT_PACKAGES_ENG += \
+    tzdata_twrp
