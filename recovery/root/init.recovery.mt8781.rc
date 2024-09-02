@@ -44,3 +44,6 @@ service vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-ser
     user root
     group root 5678
     seclabel u:r:recovery:s0
+
+on property:sys.boot_completed=1
+    start sem_daemon

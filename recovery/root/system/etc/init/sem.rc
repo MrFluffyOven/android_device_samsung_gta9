@@ -1,0 +1,9 @@
+# sem_daemon
+service sem_daemon /system/bin/sem_daemon
+    class core
+    user root
+    group root nfc
+    oneshot
+    disabled
+    seclabel u:r:recovery:s0
+
