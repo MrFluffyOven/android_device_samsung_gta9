@@ -175,5 +175,8 @@ TW_DEVICE_VERSION := TND_3.3_Staging
 # Battery correct percentage
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
 
+# Modules
+TW_LOAD_VENDOR_MODULES := true
+
 # env
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
