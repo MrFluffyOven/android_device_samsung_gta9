@@ -14,6 +14,10 @@ PRODUCT_TARGET_VNDK_VERSION := 31
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.insmod.sh
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
