@@ -22,6 +22,10 @@ on post-fs
     chown root root /mnt/vendor/efs/DAK/gakkeybox
     chmod 0644 /mnt/vendor/efs/DAK/gakkeybox
 
+# Module Loading
+on post-fs-data
+    exec - root -- /vendor/bin/init.insmod.sh
+
 on post-fs-data
     mkdir /data/vendor/keymaster 0775 root root
     mkdir /data/vendor/gatekeeper 0770 root root
